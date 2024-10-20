@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happening</title>
+    <link rel="shortcut icon" href="./assets/logo/favicon.png" type="image/x-icon">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <!-- material icons cdn -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- owl carousel cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom build css -->
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body class="bg-gray-100">
+    
+
+<!-- header starts -->
+<header class="bg-black fixed top-0 py-2.5 w-full z-10">
+
+    <!-- navbar container -->
+    <div class="w-full sm:w-9/12 px-4 m-auto flex justify-between items-center relative">
+
+        <!-- logo & search container -->
+        <div class="flex items-center flex-1">
+        <a class="h-7 mr-4" href="index.html">
+            <img class="h-full w-full object-contain" src="./assets/logo/happening-white-logo.png" alt="">
+        </a>
+
+        <!-- search container -->
+        <div class="w-9/12 px-4 py-1.5 hidden sm:flex justify-between items-center shadow-md bg-white rounded-sm">
+            <input class="text-sm flex-1 outline-none border-none placeholder-gray-500" type="text" placeholder="Search for products, brands and more">
+            <span class="material-icons text-white">search</span>
+        </div>
+        <!-- search container -->
+        </div>
+        <!-- logo & search container -->
+
+        <!-- right navs -->
+        <div class="flex items-center justify-between gap-7 relative">
+            <span class="hidden userDropDown flex items-center text-white font-medium gap-1 cursor-pointer">Jhon
+                <span class="material-icons text-sm transition-transform duration-100">expand_more</span>
+            </span>
+
+            <span class="userDropDown px-9 py-0.5 text-black bg-white border font-medium rounded-sm cursor-pointer">Login</span>
+
+           <!-- dropdown navbar hover tabs -->
+           <div class="userDropDownMenu hidden absolute w-60 -left-24 ml-2 top-9 bg-white shadow-2xl rounded flex-col text-sm">
+               <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-50 rounded-t" href="profile.html">
+                    <span class="material-icons md-18 text-black">account_circle</span>
+                    My Profile
+               </a>
+               <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-50" href="orders.html">
+                    <span class="material-icons md-18 text-black">shopping_bag</span>
+                    Orders
+               </a>
+               <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-50" href="wishlist.html">
+                    <span class="material-icons md-18 text-black">favorite</span>
+                    Wishlist
+               </a>
+               <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-50" href="#">
+                    <span class="material-icons md-18 text-black">chat</span>
+                    My Chats
+               </a>
+               <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-50" href="#">
+                    <span class="material-icons md-18 text-black">account_balance_wallet</span>
+                    Gift Cards
+               </a>
+               <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-50" href="#">
+                    <span class="material-icons md-18 text-black">notifications</span>
+                    Notifications
+               </a>
+               <a class="pl-3 py-3.5 flex gap-3 items-center hover:bg-gray-50 rounded-b" href="#">
+                    <span class="material-icons md-18 text-black">power_settings_new</span>
+                    Logout
+               </a>
+               <div class="absolute right-1/2 -top-2.5">
+                    <div class="arrow_down"></div>
+               </div>
+           </div>
+           <!-- dropdown navbar hover tabs -->
+
+            <span class="moreDropDown hidden sm:flex items-center text-white font-medium gap-1 cursor-pointer">More
+                <span class="material-icons text-sm transition-transform duration-100">expand_more</span>
+            </span>
+
+            <!-- dropdown navbar hover tabs -->
+            <div class="moreDropDownMenu hidden absolute w-60 -right-2 top-9 bg-white shadow-2xl rounded flex-col text-sm">
+            <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-50 rounded-t" href=" communication-preferences/push">
+                 <span class="material-icons md-18 text-black">notifications</span>
+                 Notification Preferences
+            </a>
+            <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-50" href="https://seller.  .com/sell-online">
+                 <span class="material-icons md-18 text-black">business_center</span>
+                 List on Happening
+            </a>
+            <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-50" href=" ">
+                 <span class="material-icons md-18 text-black">live_help</span>
+                 24x7 Customer Care
+            </a>
+            <a class="pl-3 py-3.5 border-b flex gap-3 items-center hover:bg-gray-50" href="https://advertising.  .com">
+                 <span class="material-icons md-18 text-black">trending_up</span>
+                 Advertise
+            </a>
+            <div class="absolute right-1/2 -top-2.5">
+                 <div class="arrow_down"></div>
+            </div>
+            </div>
+            <!-- dropdown navbar hover tabs -->
+
+            <a href="cart.html" class="flex items-center text-white font-medium gap-2 relative">
+                <i class="material-icons text-white md-20">work</i>
+                <!-- badge count -->
+                <div class="w-5 h-5 p-2 bg-red-500 text-xs rounded-full absolute -top-2 left-3 flex justify-center items-center border">1</div><!-- badge count -->Cart
+            </a>
+        </div>
+        <!-- right navs -->
+
+    </div>
+    <!-- navbar container -->
+</header>
+<!-- header ends -->
+
+
+    <!-- categories container header -->
+    <section class="hidden sm:block bg-white w-full px-2 sm:px-12 shadow overflow-hidden border-b mt-14">
+
+        <!-- categories container -->
+        <div>
+            <!-- categories container header 
+            <!--section class="hidden sm:block bg-white w-full px-2 sm:px-12 overflow-hidden border-b mt-14">
+        
+                <!-- categories container 
+                <div class="flex items-center justify-between p-0.5">
+                    
+                    <!-- categories 
+                    <a  href="#" class="text-sm p-2 text-gray-800 font-medium hover:text-primary-blue flex items-center gap-0.5 group">Electronics <span class="material-icons md-16 text-gray-400 group-hover:text-primary-blue">expand_more</span></a>
+                    <a  href="#" class="text-sm p-2 text-gray-800 font-medium hover:text-primary-blue flex items-center gap-0.5 group">TVs & Appliances <span class="material-icons md-16 text-gray-400 group-hover:text-primary-blue">expand_more</span></a>
+                    <a  href="#" class="text-sm p-2 text-gray-800 font-medium hover:text-primary-blue flex items-center gap-0.5 group">Men <span class="material-icons md-16 text-gray-400 group-hover:text-primary-blue">expand_more</span></a>
+                    <a  href="#" class="text-sm p-2 text-gray-800 font-medium hover:text-primary-blue flex items-center gap-0.5 group">Women <span class="material-icons md-16 text-gray-400 group-hover:text-primary-blue">expand_more</span></a>
+                    <a  href="#" class="text-sm p-2 text-gray-800 font-medium hover:text-primary-blue flex items-center gap-0.5 group">Baby & Kids <span class="material-icons md-16 text-gray-400 group-hover:text-primary-blue">expand_more</span></a>
+                    <a  href="#" class="text-sm p-2 text-gray-800 font-medium hover:text-primary-blue flex items-center gap-0.5 group">Home & Furniture <span class="material-icons md-16 text-gray-400 group-hover:text-primary-blue">expand_more</span></a>
+                    <a  href="#" class="text-sm p-2 text-gray-800 font-medium hover:text-primary-blue flex items-center gap-0.5 group">Sports, Books & More <span class="material-icons md-16 text-gray-400 group-hover:text-primary-blue">expand_more</span></a>
+                    <a  href=" travel/flights?otracker=nmenu_Flights" class="text-sm p-2 text-gray-800 font-medium hover:text-primary-blue">Flights</a>
+                    <a  href=" offers-store" class="text-sm p-2 text-gray-800 font-medium hover:text-primary-blue">Offer Zone</a>
+                    <a  href=" grocery-supermart-store?marketplace=GROCERY&otracker=nmenu_Grocery" class="text-sm p-2 text-gray-800 font-medium hover:text-primary-blue">Grocery</a>
+                    <!-- categories -->
+        </div>
+    </section>
+    <!-- categories container header -->
+
+    <!-- main sections starts -->
+    <main class="mt-12 sm:mt-0">
+    
+    <!-- product image & description container -->
+    <div class="w-full flex flex-col sm:flex-row bg-white sm:p-2 relative">
+
+        <!-- image wrapper -->
+        <div class="w-full sm:w-2/5 sm:sticky top-16 sm:h-screen">
+            <!-- imgbox -->
+            <div class="flex flex-col gap-3 m-3">
+                <div class="image-box w-full h-96 p-4 border">
+                    <img class="w-full h-full object-contain" src="assets/image 1.jpg" alt="">
+                </div>
+
+                <div class="w-full flex gap-3">
+                    <!-- add to cart btn -->
+                    <button class="p-4 w-1/2 flex items-center justify-center gap-2 text-white bg-black rounded-sm shadow" type="submit">
+                        <span class="material-icons">favorite</span>
+                        LIKE
+                    </button>
+                    <button class="p-4 w-1/2 flex items-center justify-center gap-2 text-white bg-primary-orange rounded-sm shadow" type="submit">
+                        <span class="material-icons">book_online</span>
+
+                        BOOK NOW
+                    </button>
+                    <!-- add to cart btn -->
+                </div>
+
+            </div>
+            <!-- imgbox -->
+        </div>
+        <!-- image wrapper -->
+
+        <!-- product desc wrapper -->
+        <div class="flex-1 py-2 px-3">
+
+        <!-- whole product description -->
+        <div class="flex flex-col gap-2 mb-4">
+
+            <h1 class="text-lg">GCC HOTEL & CLUB</h1>
+            <!-- rating badge -->
+            <span class="text-sm text-gray-500 font-medium flex gap-2 items-center">
+                
+                
+            </span>
+            <!-- rating badge -->
+
+            <!-- price desc -->
+            <span class="text-primary-green text-sm font-medium">Special Price</span>
+            <div class="flex items-baseline gap-2 text-2xl font-medium">
+                <span>₹1,75,000 only</span>
+               
+            </div>
+            <!-- price desc -->
+
+            
+
+
+            <!-- delivery details -->
+            <div class="flex gap-16 mt-4 items-center text-sm font-medium">
+                <p class="text-gray-500">Contact info </p>
+                <span>+91 9375816200 / +91 8457963211</span>
+            </div>
+            <!-- delivery details -->
+
+          
+
+
+           
+
+            <!-- services details -->
+            <div class="flex gap-16 mt-4 mr-6 items-stretch text-sm">
+                <p class="text-gray-500 font-medium">Services -</p>
+                <ul class="flex flex-col gap-2">
+                    <li>
+                        <p class="flex items-center gap-3"> . Wedding banequets</p>
+                    </li>
+                    <li>
+                        <p class="flex items-center gap-3"> . Party arrangements</p>
+                    </li>
+                  
+                </ul>
+            </div>
+            <!-- services details -->
+            </div>
+           
+
+            <!-- specifications border box -->
+            <div class="w-full mt-4 pb-4 rounded-sm border flex flex-col">
+                <h1 class="px-6 py-4 border-b text-2xl font-medium">About</h1>
+                <h1 class="px-6 py-3 text-lg">General</h1>
+
+                <!-- specs list -->
+                <P>
+                    GCC Hotel and Club is amidst the 3-star hotels in the city of Mumbai which provides best-in-class services to its clients. From 1933, since its establishment, it has been amazing the residents of Thane, with its classy service and luxurious interiors. It is the foremost hotel to get the 3-star rating from the Ministry of Tourism. From the beginning itself, they have gained immense goodwill from its clients because of its commitment to service, hospitality and customer satisfaction. Conveniently located just 2 km from the city limits, they offer a peaceful and serene environment for your wedding and related events.
+                    <br>
+
+                    <h1 class="px-6 py-3 text-lg">Facilities and Capacity</h1>
+
+
+GCC Hotel and Club is a spectacular place for all kinds of events. Whether it is a big fat Indian wedding or a small cocktail party, its modern facilities and the sophisticated interiors will definitely impress you. GCC Hotel and Club offers more than 90,000 sq. ft. lawn space to take your wedding party to the next level. Its three spacious banquet halls can accommodate 50 to 500 people any time. With more than one event space, they also provide you with guest accommodation and basic facilities like valet parking.
+<Br>
+
+    <h1 class="px-6 py-3 text-lg">Service Offered</h1>
+<br>
+
+Besides banquet halls and lush green lawns, GCC Hotel and Club offers other services like a great place to have a residential wedding with all your family enjoying the whole wedding process. It also offers different wedding vendors for you to choose from, like decorators, music, and entertainment, photography, and videography, transportation, and ticketing, mehndi and makeup. It is an ideal venue for all of your wedding-related functions.
+
+<h1 class="px-6 py-3 text-lg">Cusine</h1>
+
+And to make the experience complete GCC Hotel and Club offers a great catering service with three menus to choose from, Catholic, vegetarian, and non-vegetarian, while blending all your tastes and preferences, to create a personalized spread. The cuisines which they offer include:
+
+<br>
+
+<ul style="list-style-type: disc; padding-left: 20px;">
+    <li>North Indian</li>
+    <br>
+    <li>South Indian</li>
+    <br>
+    <li>Chinese</li>
+    <br>
+    <li>Continental</li>
+    <br>
+    <li>North-Eastern</li>
+    <br>
+    <li>North-Western</li>
+    <br>
+    <li>Mughlai</li>
+    <br>
+    <li>Regional specific menu</li>
+  </ul>
+  
+
+                </P>
+                <!-- specs list -->
+
+            </div>
+          
+        </div>
+
+        </div>
+        <!-- product desc wrapper -->
+
+    </div>
+    <!-- product image & description container -->
+
+    
+    </section>
+    <!-- you may like section -->
+
+    <!-- top rated section -->
+    <section id="topSelection" class="bg-white w-full shadow overflow-hidden">
+        <!-- header -->
+        <div class="flex px-6 py-3 justify-between items-center">
+            <h1 class="text-xl font-medium">Top Rated</h1>
+            <a href="#" class="bg-primary-blue text-xs font-medium text-white px-5 py-2.5 rounded-sm shadow-lg">VIEW ALL</a>
+        </div>
+        <hr>
+        <!-- header -->
+        
+        <!-- products container -->
+        <div class="flex items-center justify-between owl-carousel owl-theme relative">
+
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="https://maharajabanquetthane.com/">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="assets/image 3.jpg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Maharaja Banquet</h2>
+                <span class="text-primary-green text-sm">venues</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="https://www.radissonhotels.com/en-us/hotels/radisson-blu-resort-alibaug-spa?cid=a%3Ase+b%3Agmb+c%3Aapac+i%3Alocal+e%3Ardb+d%3Aind+h%3AINMHALIRSP">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="assets/image 7.jpg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Radisson Blu Resort & Spa, Alibaug</h2>
+                <span class="text-primary-green text-sm">venues</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="https://clubmillenniumjuhu.com/">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="assets/image 8.jpg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Juhu Club Millennium</h2>
+                <span class="text-primary-green text-sm">venues</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="https://weddingz.in/mumbai/universe-banquet-andheri-east/">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="assets/image 9.jpg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Universe Banquet Mumbai</h2>
+                <span class="text-primary-green text-sm">venues </span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="https://www.weddingwire.in/florists/only-feelings--e95038">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="assets/only feelings.jpg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Only Feelings</h2>
+                <span class="text-primary-green text-sm">Florists</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="https://www.weddingwire.in/florists/kinkar-flourist-worli--e132942">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="assets/kinkar florist.jpg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Kinkar Florists</h2>
+                <span class="text-primary-green text-sm">Florists</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="https://www.weddingwire.in/wedding-invitations/beyondesign--e51189">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="assets/Betondesign.jpg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Beyondesign</h2>
+                <span class="text-primary-green text-sm">Invitation cards</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="https://www.weddingwire.in/wedding-music/siddhi-wedding-band--e413502">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="assets/siddhi wedding band.jpg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Wedding Band</h2>
+                <span class="text-primary-green text-sm">Bands</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="https://www.youtube.com/@cinegantweddings/featured">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="assets/trancend film.jpg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Cinegant</h2>
+                <span class="text-primary-green text-sm">photography & videography</span>
+            </a>
+            <!-- one product -->
+            <a class="flex flex-col items-center gap-2 p-6" href="https://www.justdial.com/Mumbai/Armaani-Travels-Mumbai-Pune-Taxi-Parsi-Wadi-Chirag-Nagar-Ghatkopar-West/022PXX22-XX22-100609124344-L9R8_BZDET">
+                <div class="w-36 h-36 transform hover:scale-110 transition-transform duration-100 ease-out">
+                    <img class="w-full h-full object-contain" src="assets/armani travelers.jpg" alt="">
+                </div>
+                <h2 class="font-medium text-sm mt-2">Armani Travelers</h2>
+                <span class="text-primary-green text-sm">Travels</span>
+            </a>
+
+        </div>
+        <!-- products container -->
+    </section>
+    <!-- top rated section -->
+    </div>
+
+    </main>
+    <!-- main sections starts -->
+
+
+    <footer class="w-full py-1 sm:py-4 px-4 sm:px-12 bg-black text-white text-xs border-b border-gray-600 flex flex-col sm:flex-row overflow-hidden">
+        <div class="w-full sm:w-7/12 flex flex-col sm:flex-row">
+        <!-- about column -->
+        <div class="w-full sm:w-1/5 flex flex-col gap-2 my-3 sm:my-6 ml-5">
+            <h2 class="text-primary-grey mb-2">ABOUT</h2>
+            <!-- links -->
+            <a href=" " class="hover:underline">Contact Us</a>
+            <a href=" about-us" class="hover:underline">About Us</a>
+            <a href="https://www.  careers.com" class="hover:underline">Careers</a>
+            <a href=" corporate-information" class="hover:underline">Corporate Information</a>
+            <!-- links -->
+        </div>
+        <!-- about column -->
+
+        <!-- help column -->
+        <div class="w-full sm:w-1/5 flex flex-col gap-2 my-3 sm:my-6 ml-5">
+            <h2 class="text-primary-grey mb-2">HELP</h2>
+            <!-- links -->
+            <a href=" pages/payments" class="hover:underline">Payments</a>
+            <a href=" ?catalog=55c9c6edb000002e002c1701&view=CATALOG" class="hover:underline">Cancellation</a>
+            <a href=" ?catalog=55c9c8e2b0000023002c1702&view=CATALOG" class="hover:underline">FAQ</a>
+            <a href="https://seller.  " class="hover:underline">Report Infringement</a>
+            <!-- links -->
+        </div>
+        <!-- help column -->
+
+        <!-- policy column -->
+        <div class="w-full sm:w-1/5 flex flex-col gap-2 my-3 sm:my-6 ml-5">
+            <h2 class="text-primary-grey mb-2">POLICY</h2>
+            <!-- links -->
+            <a href=" pages/returnpolicy" class="hover:underline">Return Policy</a>
+            <a href=" pages/terms" class="hover:underline">Terms Of Use</a>
+            <a href=" pages/paymentsecurity" class="hover:underline">Security</a>
+            <a href=" pages/privacypolicy" class="hover:underline">Privacy</a>
+            <a href=" sitemap" class="hover:underline">Sitemap</a>
+            <a href=" pages/ewaste-compliance-tnc" class="hover:underline">EPR Compliance</a>
+            <!-- links -->
+        </div>
+        <!-- policy column -->
+
+        <!-- socials column -->
+        <div class="w-full sm:w-1/5 flex flex-col gap-2 my-3 sm:my-6 ml-5">
+            <h2 class="text-primary-grey mb-2">SOCIAL</h2>
+            <!-- links -->
+            <a href="https://www.facebook.co" class="hover:underline">Facebook</a>
+            <a href="https://twitter.co" class="hover:underline">Twitter</a>
+            <a href="https://www.youtube." class="hover:underline">YouTube</a>
+            <!-- links -->
+        </div>
+        <!-- socials column -->
+        </div>
+
+
+        
+
+    </footer>
+    <!-- footer ends -->
+
+    <!-- copyright cards footer -->
+    <div class="px-16 py-6 w-full bg-black hidden sm:flex justify-between items-center text-sm text-white">
+        <a href="#" class="flex items-center gap-2">
+           <i class="material-icons text-white md-20">work</i> List on Happening
+        </a>
+        <a href="#" class="flex items-center gap-2">
+            <i class="material-icons text-white md-20">stars</i> Advertise
+         </a>
+         <a href="#" class="flex items-center gap-2">
+            <i class="material-icons text-white md-20">card_giftcard</i> Gift Cards
+         </a>
+         <a href="#" class="flex items-center gap-2">
+            <i class="material-icons text-white md-20">help</i> Help Center
+         </a>
+         <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/payment-method_69e7ec.svg" alt="">
+    </div>
+    <!-- copyright cards footer -->
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- owl carousel cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- js-image-zoom cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/js-image-zoom/js-image-zoom.min.js"></script>
+
+    <!-- custom js -->
+    <script src="./script.js"></script>
+</body>
+</html>
